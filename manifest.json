@@ -1,0 +1,13 @@
+{
+	"name": "ショート動画を通常の表示に戻す | From YouTube",
+	"description": "YouTubeのショート表示を通常の表示に戻すアプリ",
+	"version": "0.0",
+	"manifest_version": 3,
+	"content_scripts": [{
+		"matches": ["https://www.youtube.com/shorts/*"],
+		"js": [
+			"jquery-3.6.1.slim.min.js",
+			"contents.js"
+		]
+	}]
+}
